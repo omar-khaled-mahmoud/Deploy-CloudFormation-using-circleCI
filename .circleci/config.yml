@@ -1,5 +1,5 @@
 version: 2.1
-	# Use a package of configuration called an orb.
+# Use a package of configuration called an orb.
 orbs:
 
 jobs:
@@ -15,9 +15,9 @@ jobs:
                --template-file template.yml \
                --stack-name myStack-${CIRCLE_WORKFLOW_ID:0:5} \
                --region us-east-1  # Choose any name, such as `build`
-	# Sequential workflow
+# Sequential workflow
 workflows:
-	  # Name the workflow
+# Name the workflow
   myWorkflow:
     jobs:
       - create_infrastructure
